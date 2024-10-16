@@ -1,31 +1,3 @@
-@font-face {
-  font-family: 'Noto Sans SC';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Noto Sans SC';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaGzjCnYw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
-}
 html,
 body {
   margin: 0;
@@ -368,6 +340,39 @@ body {
   margin-bottom: 20px;
   height: 180px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.content_pg3 .info_cont .pg6Ct img {
+  width: 100%;
+}
+.content_pg3 .info_cont .pg8box {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.content_pg3 .info_cont .pg8box .pk {
+  width: 630px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content_pg3 .info_cont .pg8box .pk img {
+  width: 100px;
+}
+.content_pg3 .info_cont .pg8box .mj {
+  width: 630px;
+}
+.content_pg3 .info_cont .pg8box .mj img {
+  width: 100%;
+}
+.content_pg3 .info_cont .pg8box .mj2 {
+  width: 650px;
+  height: 500px;
+}
+.content_pg3 .info_cont .pg8box .mj2 img {
+  width: 650px;
+  height: 500px;
+  object-fit: cover;
 }
 .gp4 .text {
   background-color: #f4f4f4;
