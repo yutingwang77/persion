@@ -357,7 +357,11 @@ body {
   padding-top: 30px;
 }
 .content_pg3 .info_cont .pg6Ct .pic img {
-  width: 450px;
+  width: 650px;
+}
+.content_pg3 .info_cont .pg6Ct .pic img:hover {
+  transform: translateY(0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 .content_pg3 .info_cont .pg6Cttxt {
   margin: 0;
