@@ -413,6 +413,9 @@ body {
   color: black;
   text-decoration: none;
 }
+.gp4 a:hover {
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
 .gp4 .text {
   background-color: #f4f4f4;
   color: #333;
