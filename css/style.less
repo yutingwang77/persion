@@ -343,111 +343,204 @@ body {
   padding: 40px 0;
 
   .info_cont {
-    h1 {
-      margin: 0 0 20px;
-      color: @text-color;
-      font-family: @display-font;
-    }
-
-    img {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s, box-shadow 0.3s;
-
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    .jieshao{
+      .p1{
+        font-weight: 900;
+      }
+      .p3{
+        font-weight: 500;
+        line-height: 24px;
       }
     }
-
-    .picbox {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 20px;
-
-      img {
-        width: 24%;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    .biaoti{
+      h2{
+        display: flex;
+        align-items: center;
+        
+        p{
+          font-size: 18px;
+          font-weight: 500;
+          margin-left: 20px;
+        }
       }
     }
-
-    .picbox1 {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 20px;
-
-      img {
-        border-radius: 10px;
+    .myshanzi {
+ 
+      padding: 20px;
+      background-color: #f8f8f8;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+      .info {
+        // width: 99%; // 左右布局，每个元素占宽度的48%
         margin-bottom: 20px;
-        height: 370px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        display: flex; 
+        justify-content: space-between;
+        align-items: flex-start;
+        &:hover {
+          transform: translateY(-5px);
+        }
+    
+        .lef {
+          width: 40%;
+          overflow: hidden;
+          border-radius: 8px 0 0 8px;
+    
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0.9;
+    
+            &:hover {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        }
+    
+        .shanziinfo {
+          padding: 20px;
+          // width: 70%;
+          margin-left: 30px;
+    
+          p {
+            margin: 0;
+            color: #666;
+            line-height: 1.6;
+    
+            &.p4 {
+              font-size: 1.1em;
+              color: #333;
+              margin-bottom: 10px;
+            }
+    
+            &.p5 {
+              font-size: 1em;
+              color: #333;
+            }
+          }
+        }
       }
-    }
-
-    .picbox2 {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 20px;
-
-      img {
-        border-radius: 10px;
-        margin-bottom: 20px;
-        height: 440px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       }
-    }
-
-    .picbox3 {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 20px;
-
-      img {
-        border-radius: 10px;
-        margin-bottom: 20px;
-        height: 400px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  
+      .zhizuoshanzi {
+        column-count: 3; // 设置为两列
+        column-gap: 20px; // 设置列与列之间的间隙
+        width: 100%; // 容器宽度
+        padding: 20px;
+        background-color: #f8f8f8;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
+        .info1 {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+          margin-bottom: 20px; // 设置元素之间的垂直间隙
+          page-break-inside: avoid; // 防止打印时在列之间断开
+          break-inside: avoid-column; // 防止在列之间断开
+      
+          .top {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px 8px 0 0;
+      
+            img {
+              width: 100%;
+              height: auto;
+              display: block;
+              transition: opacity 0.3s ease-in-out;
+              opacity: 0.9;
+      
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+      
+          .zhizuoshanzixt {
+            padding: 20px;
+            background-color: #fafafa;
+            border-top: 1px solid #eaeaea;
+      
+            .tet {
+              margin: 0;
+              color: #333;
+              line-height: 1.6;
+              font-size: 1em;
+      
+              .chinese {
+                font-style: italic;
+                color: #007BFF; // 使用变量
+              }
+            }
+          }
+        }
+      
+        @media (max-width: 768px) {
+          column-count: 1; // 在小屏幕上改为一列
+        }
       }
-    }
-
-    .picbox4 {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 20px;
-
-      img {
-        border-radius: 10px;
-        margin-bottom: 20px;
-        height: 440px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      .daily {
+       
+        padding: 20px;
+        background-color: #f8f8f8;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
+        .pics {
+          grid-column: 1 / 2; // 图片列
+          display: grid;
+          grid-template-columns: repeat(4, 1fr); // 四张图片
+          grid-gap: 10px; // 图片之间的间隙
+          overflow-y: scroll;
+          img {
+            // width: 100%;
+            height: 350px;
+            display: block;
+            border-radius: 8px;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0.9;
+      
+            &:hover {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        }
+      
+        .zhizuoshanzixt {
+  
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+          padding: 20px;
+      
+          .tet {
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+            font-size: 1em;
+      
+            .chinese {
+              font-style: italic;
+              color:  #007BFF;
+            }
+          }
+        }
+      
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr; // 在小屏幕上改为一列
+          .pics {
+            grid-template-columns: repeat(2, 1fr); // 两张图片一行
+          }
+        }
       }
-    }
-
-    .picbox5 {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 20px;
-
-      img {
-        border-radius: 10px;
-        margin-bottom: 20px;
-        height: 420px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      }
-    }
-
+      
     .picbox6 {
       width: 100%;
       display: flex;
@@ -553,6 +646,112 @@ body {
     }
 
   }
+    h1 {
+      margin: 0 0 20px;
+      color: @text-color;
+      font-family: @display-font;
+    }
+
+    img {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .picbox {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      img {
+        width: 24%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .picbox1 {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 370px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .picbox2 {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 440px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .picbox3 {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 400px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .picbox4 {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 440px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .picbox5 {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 420px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    
 }
 
 .gp4 {
