@@ -133,7 +133,7 @@ body {
 }
 .content2_bj .info_bj .item {
   flex: 1 0 30%;
-  background: #d2b4de;
+  background: #eee;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -152,10 +152,10 @@ body {
 }
 .content2_bj .info_bj .item .txt {
   padding: 20px;
-  color: #fff;
+  color: #000;
 }
 .content2_bj .info_bj .item .txt .p3 {
-  color: #f5f5dc;
+  color: #000;
   font-size: 1em;
   line-height: 1.6;
 }
@@ -168,10 +168,10 @@ body {
   padding: 20px;
   height: 120px;
   box-sizing: border-box;
-  color: #fff;
+  color: #000;
 }
 .content2_bj .info_bj .img1 .txt .p3 {
-  color: #f5f5dc;
+  color: #000;
   font-size: 1em;
   line-height: 1.6;
 }
@@ -184,10 +184,10 @@ body {
   padding: 20px;
   height: 120px;
   box-sizing: border-box;
-  color: #fff;
+  color: #000;
 }
 .content2_bj .info_bj .img2 .txt .p3 {
-  color: #f5f5dc;
+  color: #000;
   font-size: 1em;
   line-height: 1.6;
 }
@@ -202,15 +202,15 @@ body {
   box-sizing: border-box;
 }
 .content2_bj .info_bj .img3 .txt .p3 {
-  color: #f5f5dc;
+  color: #000;
   font-size: 1em;
   line-height: 1.6;
 }
 .dfsafd {
   margin-left: 20px;
-  background: #d2b4de;
+  background: #eee;
   border-radius: 10px;
-  color: white;
+  color: #000;
 }
 .dfsafd .fu {
   display: flex;
@@ -232,7 +232,7 @@ body {
   object-fit: cover;
 }
 .bbb .img4 {
-  background: #d2b4de;
+  background: #eee;
   border-radius: 10px;
 }
 .bbb .img4 .txt {
@@ -241,7 +241,7 @@ body {
   box-sizing: border-box;
 }
 .bbb .img4 .txt .p3 {
-  color: #f5f5dc;
+  color: #000;
   font-size: 1em;
   line-height: 1.6;
 }
@@ -530,7 +530,7 @@ body {
   box-sizing: border-box;
 }
 .content_pg3 .picbox .picboxInfo {
-  background-color: #d2b4de;
+  background-color: #eee;
   width: 24%;
   border-radius: 10px;
 }
@@ -541,7 +541,7 @@ body {
 }
 .content_pg3 .picbox .picboxInfo .txts {
   padding: 15px;
-  color: white;
+  color: #000;
 }
 .content_pg3 .picbox0 {
   display: flex;
@@ -596,6 +596,9 @@ body {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+.content_pg3 .picbox3 .dfs {
+  margin-right: 20px;
+}
 .content_pg3 .picbox3 .dfs img {
   border-radius: 10px;
   margin-bottom: 20px;
@@ -604,7 +607,8 @@ body {
   margin-right: 30px;
 }
 .content_pg3 .picbox3 .dfs p {
-  max-width: 400px;
+  max-width: 380px;
+  font-family: 'Times New Roman', serif;
 }
 .content_pg3 .picbox4 {
   width: 100%;
