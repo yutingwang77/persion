@@ -475,6 +475,12 @@ body {
   transform: translateY(0);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
+.content_pg3 .info_cont .fasfdsa {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 .content_pg3 .info_cont .pg6Cttxt {
   margin: 0;
   text-align: justify;
@@ -698,6 +704,32 @@ body {
   float: left;
   margin-right: 4px;
   line-height: 1;
+}
+.fsdkfds .info {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+.fsdkfds .info h4 {
+  font-size: 1.4em;
+  color: #e87959;
+  margin-bottom: 10px;
+}
+.fsdkfds .info p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+.fsdkfds .info .pp {
+  font-size: 1.3em;
+  color: #666;
+  font-family: 'Times New Roman', serif;
+  font-style: oblique;
+  /* 文字倾斜 */
+}
+.fsdkfds .info .pp span {
+  color: black;
+  font-style: normal;
 }
 .footer {
   background-color: #282c35;
